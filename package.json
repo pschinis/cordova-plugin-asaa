@@ -1,0 +1,11 @@
+{
+  "name": "cordova-plugin-asaa",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "cordova-plugin-asaa",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "description": "Allows you to get the ASA attribution token from JavaScript"
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-asaa"
+    version="1.0.0">
+    <name>ASAAttributionPlugin</name>
+    <description></description>
+    <license>MIT</license>
+    <keywords></keywords>
+    <repo>https://github.com/driftyco/cordova-plugin-template.git</repo>
+    <issue>https://github.com/driftyco/cordova-plugin-template/issues</issue>
+
+    <!-- ios -->
+    <platform name="ios">
+        <js-module src="www/plugin.js" name="ASAAttributionPlugin">
+            <clobbers target="asaAttribution" />
+        </js-module>
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="ASAAttributionPlugin">
+                <param name="ios-package" value="ASAAttributionPlugin" onload="true" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/ASAAttributionPlugin.h" />
+        <source-file src="src/ios/ASAAttributionPlugin.m" />
+        <framework src="AdServices.framework" weak="true" />
+    </platform>
+</plugin>
